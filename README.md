@@ -79,6 +79,7 @@ http://localhost/filipino-cookbook-api-cuares-main/client/
 | GET | `/api/categories` | Retrieves all food categories and displays them in a table. |
 | GET | `/api/foods/search/{name}` | Searches food records by name. |
 | GET | `/api/ingredients` | Retrieves all ingredients and displays them in a table. |
+| POST | `/api/foods` | Adds a new Filipino food record with category, origin, instructions, and ingredient IDs. |
 
 ## 6. Screenshots
 
