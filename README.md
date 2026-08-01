@@ -111,18 +111,3 @@ This client application uses the Filipino Cookbook API developed by:
 **GitHub Repository:** https://github.com/cuaresjohnmark-ux/filipino-cookbook-api-cuares
 
 The API is used for educational purposes with the permission of the developer.
-
-## Application Features
-
-- Displays all Filipino cookbook food records
-- Searches food records by name
-- Retrieves a single food record by ID
-- Displays food categories
-- Displays ingredients
-- Sends authenticated API requests using a Bearer token
-- Includes an invalid token test for authentication checking
-- Presents API data through interface elements instead of raw JSON
-
-## Configuration Note
-
-Do not upload `config.php` to GitHub because it contains the API authentication token. Use `config.example.php` as the public sample configuration file.
