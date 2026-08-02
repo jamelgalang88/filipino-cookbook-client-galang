@@ -103,6 +103,12 @@ http://localhost/filipino-cookbook-api-cuares-main/client/
 
 ![Invalid Token Test](screenshots/invalid-token-test.png)
 
+### Add Food (POST) Display
+
+![Add Food Success](screenshots/add-food-success.png)
+
+Confirms a new food record (Bagnet) was successfully submitted through the Add Food form, returning a 201 response from the `POST /api/foods` endpoint.
+
 ## 7. API Source and Acknowledgment
 
 This client application uses the Filipino Cookbook API developed by:
