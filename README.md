@@ -8,7 +8,7 @@
 
 The Filipino Cookbook Client Application is a separate driver/client program that consumes the secured Filipino Cookbook API developed by a classmate. The application retrieves cookbook data through HTTP API endpoints and displays the responses using readable interface elements instead of raw JSON.
 
-The client allows users to view Filipino food records, search foods by name, find one food by ID, view food categories, view ingredients, and test API authentication using an invalid token request.
+The client allows users to view Filipino food records, search foods by name, find one food by ID, view food categories, view ingredients, and submit a new food record through a POST request.
 
 This application is intended for students, instructors, and beginner developers who need a simple user interface for testing and presenting API data.
 
@@ -76,16 +76,23 @@ http://localhost/filipino-cookbook-api-cuares-main/client/
 | --- | --- | --- |
 | GET | `/api/foods` | Retrieves all Filipino food records and displays them as food cards. |
 | GET | `/api/foods/{id}` | Retrieves one Filipino food record by ID and displays its details. |
+| GET | `/api/foods/random` | Retrieves a random Filipino food record. |
 | GET | `/api/categories` | Retrieves all food categories and displays them in a table. |
+| GET | `/api/categories/{id}/foods` | Retrieves all foods that belong to a specific category. |
+| GET | `/api/categories/counts` | Retrieves the number of foods in each category. |
 | GET | `/api/foods/search/{name}` | Searches food records by name. |
 | GET | `/api/ingredients` | Retrieves all ingredients and displays them in a table. |
-| POST | `/api/foods` | Adds a new Filipino food record with category, origin, instructions, and ingredient IDs. |
+| POST | `/api/foods` | Adds a new Filipino food record with category, origin, instructions, and ingredient IDs through the Add Food form. |
 
 ## 6. Screenshots
 
 ### Foods Display
 
 ![Successful API Data Display](screenshots/foods-success.png)
+
+### Food Details Display
+
+![Food Details Display](screenshots/food-details-success.png)
 
 ### Categories Display
 
@@ -99,15 +106,23 @@ http://localhost/filipino-cookbook-api-cuares-main/client/
 
 ![Search Foods Display](screenshots/search-foods-success.png)
 
-### Invalid Token Test
+### Random Food Display
 
-![Invalid Token Test](screenshots/invalid-token-test.png)
+![Random Food Display](screenshots/random-food-success.png)
+
+### Foods by Category Display
+
+![Foods by Category Display](screenshots/foods-by-category-success.png)
+
+### Category Food Counts Display
+
+![Category Food Counts Display](screenshots/category-counts-success.png)
 
 ### Add Food (POST) Display
 
 ![Add Food Success](screenshots/add-food-success.png)
 
-Confirms a new food record (Bagnet) was successfully submitted through the Add Food form, returning a 201 response from the `POST /api/foods` endpoint.
+Confirms a new food record (Bagnet) was successfully submitted through the Add Food form, returning a success response from the `POST /api/foods` endpoint.
 
 ## 7. API Source and Acknowledgment
 
@@ -118,3 +133,4 @@ This client application uses the Filipino Cookbook API developed by:
 **GitHub Repository:** https://github.com/cuaresjohnmark-ux/filipino-cookbook-api-cuares
 
 The API is used for educational purposes with the permission of the developer.
+
